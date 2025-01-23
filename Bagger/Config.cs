@@ -9,7 +9,7 @@ namespace Bagger
     public class Config
     {
         public static string ConfigPath = Path.Combine(TShock.SavePath, "BaggerConfig.json");
-        
+        public bool AllowClaimsForContributers = true;
         public DropInfo KingSlimeDrop = new DropInfo(ItemID.KingSlimeBossBag, 1);
         public DropInfo EyeOFCthulhuDrop = new DropInfo(ItemID.EyeOfCthulhuBossBag, 1);
         public DropInfo EaterOfWorldsDrop = new DropInfo(ItemID.EaterOfWorldsBossBag, 1);
