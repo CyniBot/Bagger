@@ -94,7 +94,6 @@ namespace Bagger
                         {
                             plr.SendErrorMessage("[Bagger] Seems like this UUID is used for another account.");
                         }
-
                     }
                 }
             }
@@ -242,7 +241,7 @@ namespace Bagger
         {
             dbManager.ResetPlayers();
             args.Player.SendSuccessMessage("[Bagger] Database has been reset successfully.");
-            TShock.Log.Info($"[Bagger] {args.Player.Name} with {args.Player.Account.Name} account name has reset the database.");
+            TShock.Log.Info($"{args.Player.Name} with {args.Player.Account.Name} account name has reset the database.");
         }
         private static void OnReload(ReloadEventArgs args)
         {
