@@ -43,7 +43,7 @@ namespace Bagger
                 HelpText = "Resets the Bagger's database."
             });
         }
-        }
+
 
         private void OnGamePostInitialize(EventArgs args)
         {
