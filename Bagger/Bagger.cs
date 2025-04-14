@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Sqlite;
+using Microsoft.Data.Sqlite;
 using System.Data;
 using Terraria;
 using Terraria.ID;
@@ -63,7 +63,7 @@ namespace Bagger
             if (IsDefeated(NPCID.Golem)) { DownedBosses.Add(NPCID.Golem); }
             if (IsDefeated(NPCID.DukeFishron)) { DownedBosses.Add(NPCID.DukeFishron); }
             if (IsDefeated(NPCID.HallowBoss)) { DownedBosses.Add(NPCID.HallowBoss); }
-            if (IsDefeated(NPCID.CultistBoss)) { DownedBosses.Add(NPCID.CultistBoss); }
+            if (IsDefeated(NPCID.DD2Betsy)) { DownedBosses.Add(NPCID.DD2Betsy); }
             if (IsDefeated(NPCID.MoonLordCore)) { DownedBosses.Add(NPCID.MoonLordCore); }
         }
 
@@ -221,11 +221,12 @@ namespace Bagger
                 args.Player.GiveItem(Config.EmpressOfLight.ItemID, Config.EmpressOfLight.Stack);
             }
 
-            if ((bplr.ClaimedMask & 65536) != 65536 && DownedBosses.Contains(NPCID.CultistBoss))
+            if ((bplr.ClaimedMask & 65536) != 65536 && DownedBosses.Contains(NPCID.DD2Betsy))
             {
                 bplr.ClaimedMask |= 65536;
-                args.Player.GiveItem(Config.LunaticCultistDrop.ItemID, Config.LunaticCultistDrop.Stack);
+                args.Player.GiveItem(Config.BetsyDrop.ItemID, Config.BetsyDrop.Stack);
             }
+
 
             if ((bplr.ClaimedMask & 131072) != 131072 && DownedBosses.Contains(NPCID.MoonLordCore))
             {
