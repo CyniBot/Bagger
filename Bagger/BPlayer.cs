@@ -50,7 +50,7 @@ public class BPlayer
             NPCID.Golem => ClaimedMask | 0b_10_0000_0000_0000,
             NPCID.DukeFishron => ClaimedMask | 0b_100_0000_0000_0000,
             NPCID.HallowBoss => ClaimedMask | 0b_1000_0000_0000_0000,
-            NPCID.CultistBoss => ClaimedMask | 0b_1_0000_0000_0000_0000_0000,
+            NPCID.DD2Betsy => ClaimedMask | 0b_1_0000_0000_0000_0000_0000,
             NPCID.MoonLordCore => ClaimedMask | 0b_10_0000_0000_0000_0000_0000,
             _ => ClaimedMask
         };
